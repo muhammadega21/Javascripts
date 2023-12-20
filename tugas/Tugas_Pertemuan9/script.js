@@ -66,3 +66,5 @@ const perusahaan = {
     },
   },
 };
+
+console.log(perusahaan.struktur.direksi.Rosid);
