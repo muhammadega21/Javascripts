@@ -13,5 +13,3 @@ function gaji_karyawan(tahun_kerja, proyek) {
 }
 
 total_gaji = gaji_karyawan(6, 7);
-
-console.log(`Gaji bersih anda selama 6 tahun adalah Rp.${total_gaji}`);
