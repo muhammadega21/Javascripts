@@ -14,8 +14,11 @@ body {
   width: 100%;
 }
 
-/* Navbar */
+header {
+  height: 100vh;
+}
 
+/* Navbar */
 nav {
   height: 60px;
   display: flex;
@@ -87,6 +90,11 @@ nav .nav-link ul a:hover {
   font-size: 17px;
   font-weight: 600;
   background-color: #1b9cef;
+  transition: opacity 0.2s ease;
+}
+
+.banner .left a:hover {
+  opacity: 0.9;
 }
 
 .banner .right .img {
