@@ -1,0 +1,2 @@
+const map = document.querySelector("#map");
+map.innerHTML = `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.301120245057!2d100.35712407407851!3d-0.9225609353349017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2fd4b8b50f84e2df%3A0x6b663fb549733102!2sUniversitas%20Metamedia!5e0!3m2!1sid!2sde!4v1704634063061!5m2!1sid!2sde" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`;

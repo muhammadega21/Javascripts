@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap");
 
 :root {
-  --primary: #b614c5;
+  --primary: #1b9cef;
   --text: #4d4b4b;
 }
 
@@ -89,7 +89,7 @@ nav .nav-link ul a:hover {
   border-radius: 40px;
   font-size: 17px;
   font-weight: 600;
-  background-color: #1b9cef;
+  background-color: var(--primary);
   transition: opacity 0.2s ease;
 }
 
@@ -99,4 +99,205 @@ nav .nav-link ul a:hover {
 
 .banner .right .img {
   width: 500px;
+}
+
+.content {
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 2.5rem;
+}
+
+.content-title {
+  text-align: center;
+  margin-bottom: 1.75rem;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.class .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem 2rem;
+}
+
+.class .card {
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+}
+
+.class .card .img {
+  border-radius: 6px 6px 0 0;
+  overflow: hidden;
+}
+
+.class .card-body {
+  padding: 0 12px;
+  padding-bottom: 15px;
+}
+
+.class .card-body .card-title {
+  display: inline-block;
+  font-weight: 700;
+  margin: 15px 0;
+}
+
+.class .card-body .card-text {
+  text-align: justify;
+  text-indent: 30px;
+}
+
+.contact {
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.contact h1 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 20px;
+}
+
+.contact .contact-us {
+  width: 100%;
+}
+
+.contact .contact-us .input-form {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.contact .contact-us .input-form label {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.contact .contact-us .input-form input,
+.contact .contact-us .input-form textarea {
+  font-size: 14px;
+  border: none;
+  background: none;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  padding: 6px 12px;
+}
+
+.contact form button {
+  position: relative;
+  left: 98%;
+  bottom: 10px;
+  transform: translateX(-100%);
+  padding: 6px 12px;
+  background-color: var(--primary);
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.contact .social-media {
+  width: 100%;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0 20px;
+}
+
+.contact .social-media .link {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .social-media .link a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  margin: 5px 0;
+  font-weight: 500;
+}
+
+.contact .social-media .link i {
+  font-size: 20px;
+}
+
+.contact .social-media .link span {
+  color: var(--primary);
+  transition: 0.2s;
+}
+
+.contact .social-media .link a:hover span {
+  opacity: 0.7;
+}
+
+#map iframe {
+  margin-top: 10px;
+  height: 300px;
+  width: 100%;
+}
+
+footer {
+  background-color: #191919;
+  color: #fff;
+  padding: 12px 0;
+}
+
+footer .brand {
+  padding: 0 7rem;
+  padding-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+footer .brand .left {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 600;
+}
+
+footer .brand .left .img {
+  width: 30px;
+}
+
+footer .brand .right {
+  display: flex;
+  font-size: 22px;
+  gap: 10px;
+}
+
+footer .link {
+  background-color: #1d1d1d;
+  padding: 12px 7rem;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+footer .link h4 {
+  display: inline-block;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+footer .link a,
+footer .link p {
+  font-size: 14px;
+}
+
+footer .copy {
+  padding: 0 7rem;
+  padding-top: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
 }
