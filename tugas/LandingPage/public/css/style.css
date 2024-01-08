@@ -6,26 +6,32 @@
   --text: #4d4b4b;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: #fff;
   color: var(--text);
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   width: 100%;
-}
-
-header {
-  height: 100vh;
 }
 
 /* Navbar */
 nav {
   height: 60px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  position: relative;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  background: #fff;
 }
 
 nav .brand {
@@ -46,11 +52,27 @@ nav .nav-link ul a {
   color: var(--text);
   position: relative;
   opacity: 0.8;
-  transition: opacity 0.2s ease;
+  transition: 0.2s ease;
   font-weight: 500;
 }
 
-nav .nav-link ul a:hover {
+nav .nav-link ul a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: var(--primary);
+  width: 0;
+  transition: 0.2s;
+}
+
+nav .nav-link ul a:hover,
+nav .nav-link ul a:hover::before,
+nav .nav-link ul a.active::before,
+nav .nav-link ul a.active {
+  color: var(--primary);
   opacity: 1;
   width: 100%;
 }
@@ -59,6 +81,8 @@ nav .nav-link ul a:hover {
 
 .banner {
   padding: 20px 30px;
+  height: 100%;
+  min-height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -102,14 +126,16 @@ nav .nav-link ul a:hover {
 }
 
 .content {
+  position: relative;
   width: 85%;
   margin: 0 auto;
   margin-bottom: 2.5rem;
+  padding-top: 4rem;
 }
 
 .content-title {
   text-align: center;
-  margin-bottom: 1.75rem;
+  margin-bottom: 3rem;
   font-weight: 600;
   font-size: 24px;
 }
@@ -123,6 +149,11 @@ nav .nav-link ul a:hover {
 .class .card {
   box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
+  transition: 0.2s;
+}
+
+.class .card:hover {
+  transform: scale(1.01);
 }
 
 .class .card .img {
@@ -152,12 +183,12 @@ nav .nav-link ul a:hover {
   margin-bottom: 2rem;
   display: flex;
   gap: 1rem;
-  margin-bottom: 2.5rem;
+  padding-top: 4rem;
 }
 
 .contact h1 {
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   font-size: 20px;
 }
 
@@ -169,7 +200,7 @@ nav .nav-link ul a:hover {
   padding: 0 10px;
   display: flex;
   flex-direction: column;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 .contact .contact-us .input-form label {
@@ -192,6 +223,7 @@ nav .nav-link ul a:hover {
 .contact form button {
   position: relative;
   left: 98%;
+  top: 5px;
   bottom: 10px;
   transform: translateX(-100%);
   padding: 6px 12px;
@@ -203,7 +235,6 @@ nav .nav-link ul a:hover {
 
 .contact .social-media {
   width: 100%;
-  border-left: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0 20px;
 }
 

@@ -12,6 +12,7 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header>
@@ -21,41 +22,46 @@
         </div>
         <div class="nav-link">
           <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="#home" class="active">Home</a></li>
             <li>
-              <a class="dropdown" href="#">Class</a>
+              <a href="#class">Class</a>
             </li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
-      <div class="banner">
-        <div class="left">
-          <h1>KAFEKODING,</h1>
-          <p>
-            Merupakan kelas belajar gratis di Universitas Metamedia yang
-            mempelajari tentang <strong>Pemograman</strong>,
-            <strong>Koding</strong>, dan <strong>Design</strong>.
-          </p>
-          <a target="_blank" href="http://daftar.kafekoding.com">DAFTAR </a>
-        </div>
-        <div class="right">
-          <div class="img">
-            <img src="public/img/image1.png" alt="Image" />
-          </div>
+    </header>
+    <section id="home" class="banner">
+      <div class="left">
+        <h1>KAFEKODING,</h1>
+        <p>
+          Merupakan kelas belajar gratis di Universitas Metamedia yang
+          mempelajari tentang <strong>Pemograman</strong>,
+          <strong>Koding</strong>, dan <strong>Design</strong>.
+        </p>
+        <a target="_blank" href="http://daftar.kafekoding.com">DAFTAR </a>
+      </div>
+      <div class="right">
+        <div class="img">
+          <img src="public/img/image1.png" alt="Image" />
         </div>
       </div>
-    </header>
+    </section>
 
-    <hr class="w-[85%] mx-auto mb-[2.5rem]" />
+    <hr class="w-[85%] mx-auto" />
 
-    <section class="content">
+    <section id="class" class="content">
       <div class="class">
-        <div class="content-title">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-offest="200"
+          class="content-title"
+        >
           <h1>Kelas Kafekoding</h1>
         </div>
-        <div class="cards">
-          <div class="card">
+        <div data-aos-delay="200" class="cards">
+          <div data-aos-delay="200" class="card">
             <div class="img">
               <img src="public/img/html-css.jpg" alt="html-css" />
             </div>
@@ -72,7 +78,7 @@
               </div>
             </div>
           </div>
-          <div class="card">
+          <div data-aos-delay="250" class="card">
             <div class="img">
               <img src="public/img/javascript.jpg" alt="javascript" />
             </div>
@@ -89,7 +95,7 @@
               </div>
             </div>
           </div>
-          <div class="card">
+          <div data-aos-delay="300" class="card">
             <div class="img">
               <img src="public/img/php.jpg" alt="php" />
             </div>
@@ -123,7 +129,7 @@
               </div>
             </div>
           </div>
-          <div class="card">
+          <div data-aos-delay="100" class="card">
             <div class="img">
               <img src="public/img/design.jpg" alt="php" />
             </div>
@@ -142,15 +148,10 @@
           </div>
         </div>
       </div>
-      <div class="activity">
-        <div class="class-activity">
-          <div class="img"></div>
-        </div>
-      </div>
     </section>
-    <hr class="w-[85%] mx-auto mb-[2rem]" />
-    <section class="contact">
-      <div class="contact-us">
+    <hr class="w-[85%] mx-auto mt-[2.5rem]" />
+    <section id="contact" class="contact">
+      <div data-aos="fade-right" data-aos-duration="1000" class="contact-us">
         <h1>Contact Us</h1>
         <form action="" class="relative">
           <div class="input-form">
@@ -172,6 +173,15 @@
             />
           </div>
           <div class="input-form">
+            <label for="phone">Phone</label>
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              placeholder="Masukkan No. Telp Anda"
+            />
+          </div>
+          <div class="input-form">
             <label for="message">Message</label>
             <textarea
               name="message"
@@ -184,7 +194,7 @@
           <button>Kirim</button>
         </form>
       </div>
-      <div class="social-media">
+      <div data-aos="fade-left" data-aos-duration="1000" class="social-media">
         <h1>Social Media</h1>
         <div class="link">
           <a target="_blank" href="https://wa.me/qr/PNFENQX5RBASK1"
@@ -208,11 +218,13 @@
           <h1>KAFEKODING</h1>
         </div>
         <div class="right">
-          <a href=""><i class="bx bxl-whatsapp"></i></a>
-          <a href="">
+          <a target="_blank" href="https://wa.me/qr/PNFENQX5RBASK1"
+            ><i class="bx bxl-whatsapp"></i
+          ></a>
+          <a target="_blank" href="https://www.instagram.com/kafekoding/">
             <i class="bx bxl-instagram"></i>
           </a>
-          <a href="">
+          <a target="_blank" href="https://www.tiktok.com/@kafekoding">
             <i class="bx bxl-tiktok"></i>
           </a>
         </div>
@@ -222,13 +234,13 @@
           <h4>Quick Link</h4>
           <div class="links">
             <p>
-              <a href="">home</a>
+              <a href="#home">home</a>
             </p>
             <p>
-              <a href="">Kelas</a>
+              <a href="#class">Kelas</a>
             </p>
             <p>
-              <a href="">Contact Us</a>
+              <a href="#contact">Contact Us</a>
             </p>
           </div>
         </div>
@@ -252,5 +264,9 @@
       </div>
     </footer>
     <script src="public/js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
