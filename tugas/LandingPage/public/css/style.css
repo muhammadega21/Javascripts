@@ -95,9 +95,33 @@ nav .nav-link ul a.active {
 }
 
 .banner .left h1 {
+  display: inline;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 38px;
+  position: relative;
+}
+
+.banner .left h1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  border-left: 2px solid var(--text);
+  animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+  40%,
+  60% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
 }
 
 .banner .left p {

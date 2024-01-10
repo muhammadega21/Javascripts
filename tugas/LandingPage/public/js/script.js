@@ -1,3 +1,20 @@
+// Text animation
+let text = document.querySelector(".banner .left h1");
+const textAnimated = () => {
+  setTimeout(() => {
+    text.textContent = "KAFEKODING";
+  }, 0);
+  setTimeout(() => {
+    text.textContent = "KAMI MEMILIH";
+  }, 4000);
+  setTimeout(() => {
+    text.textContent = "TURUN TANGAN";
+  }, 8000);
+};
+
+textAnimated();
+setInterval(textAnimated, 12000);
+
 // map
 const map = document.getElementById("map");
 map.innerHTML =
@@ -28,7 +45,12 @@ window.onscroll = () => {
 // card fade up
 const cards = document.querySelectorAll(".card");
 cards.forEach((card, i) => {
-  card.setAttribute("data-aos", "fade-up");
+  card.setAttribute("data-aos", "zoom-in");
   card.setAttribute("data-aos-duration", 1000);
   card.setAttribute("data-aos-offest", 0);
 });
+
+// Tahun
+let tahun = document.getElementById("tahun");
+const year = new Date();
+tahun.textContent = year.getFullYear();
