@@ -44,7 +44,7 @@ window.onscroll = () => {
 
 // card fade up
 const cards = document.querySelectorAll(".card");
-cards.forEach((card, i) => {
+cards.forEach((card) => {
   card.setAttribute("data-aos", "zoom-in");
   card.setAttribute("data-aos-duration", 1000);
   card.setAttribute("data-aos-offest", 0);

@@ -38,7 +38,9 @@
     </header>
     <section id="home" class="banner">
       <div data-aos="fade-up" data-aos-duration="800" class="left">
-        <h1>KAFEKODING</h1>
+        <div class="banner-title overflow-hidden">
+          <h1>KAFEKODING</h1>
+        </div>
         <p>
           Merupakan kelas belajar gratis di Universitas Metamedia yang
           mempelajari tentang <strong>Pemograman</strong>,
@@ -52,7 +54,7 @@
         data-aos-delay="200"
         class="right"
       >
-        <div class="img">
+        <div class="img hidden lg:block">
           <img src="public/img/image1.png" alt="Image" />
         </div>
       </div>
@@ -70,7 +72,10 @@
         >
           <h1>Kelas Kafekoding</h1>
         </div>
-        <div data-aos-delay="200" class="cards">
+        <div
+          data-aos-delay="200"
+          class="cards grid-cols-1 sm:grid-cols-2 md:grid-cols-3"
+        >
           <div data-aos-delay="200" class="card">
             <div class="img">
               <img src="public/img/html-css.jpg" alt="html-css" />
@@ -160,7 +165,7 @@
       </div>
     </section>
     <hr class="w-[85%] mx-auto mt-[2.5rem]" />
-    <section id="contact" class="contact">
+    <section id="contact" class="contact block lg:flex">
       <div data-aos="fade-right" data-aos-duration="1000" class="contact-us">
         <h1>Contact Us</h1>
         <form action="" class="relative">
@@ -204,7 +209,11 @@
           <button>Kirim</button>
         </form>
       </div>
-      <div data-aos="fade-left" data-aos-duration="1000" class="social-media">
+      <div
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        class="social-media px-0 mt-5 lg:px-5 lg:mt-0"
+      >
         <h1>Social Media</h1>
         <div class="link">
           <a target="_blank" href="https://wa.me/qr/PNFENQX5RBASK1"
@@ -220,7 +229,7 @@
       </div>
     </section>
     <footer>
-      <div class="brand">
+      <div class="brand px-[1rem] md:px-[7rem]">
         <div class="left">
           <div class="img">
             <img src="public/img/logo.png" alt="kafekoding" />
@@ -239,7 +248,7 @@
           </a>
         </div>
       </div>
-      <div class="link">
+      <div class="link py-3 px-[1rem] md:px-[7rem]">
         <div class="quickLink">
           <h4>Quick Link</h4>
           <div class="links">
@@ -269,7 +278,7 @@
           <p>Design Grafis</p>
         </div>
       </div>
-      <div class="copy">
+      <div class="copy px-[1rem] md-px-[7rem]">
         <p>
           Copyright &copy; <span id="tahun"></span> Kafekoding, All rights
           Reversed

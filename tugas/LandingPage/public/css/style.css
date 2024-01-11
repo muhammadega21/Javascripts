@@ -18,6 +18,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   width: 100%;
+  overflow-x: hidden;
 }
 
 /* Navbar */
@@ -146,6 +147,8 @@ nav .nav-link ul a.active {
 }
 
 .banner .right .img {
+  position: relative;
+  z-index: 2;
   width: 500px;
 }
 
@@ -166,7 +169,7 @@ nav .nav-link ul a.active {
 
 .class .cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  min-width: 150px;
   gap: 3rem 2rem;
 }
 
@@ -205,7 +208,6 @@ nav .nav-link ul a.active {
   width: 85%;
   margin: 0 auto;
   margin-bottom: 2rem;
-  display: flex;
   gap: 1rem;
   padding-top: 4rem;
 }
@@ -259,7 +261,6 @@ nav .nav-link ul a.active {
 
 .contact .social-media {
   width: 100%;
-  padding: 0 20px;
 }
 
 .contact .social-media .link {
@@ -303,7 +304,6 @@ footer {
 }
 
 footer .brand {
-  padding: 0 7rem;
   padding-bottom: 12px;
   display: flex;
   justify-content: space-between;
@@ -330,7 +330,6 @@ footer .brand .right {
 
 footer .link {
   background-color: #1d1d1d;
-  padding: 12px 7rem;
   display: flex;
   justify-content: space-around;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
@@ -350,7 +349,6 @@ footer .link p {
 }
 
 footer .copy {
-  padding: 0 7rem;
   padding-top: 12px;
   font-size: 15px;
   font-weight: 500;
